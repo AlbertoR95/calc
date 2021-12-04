@@ -1,19 +1,19 @@
 import java.util.Scanner;
 
-class CalculatorInt extends CalculatorA {
+class Calculatorf {
     protected String op;
-    protected int n1;
-    protected int n2;
+    protected double n1;
+    protected double n2;
 
     public void letStart() {
         boolean err = true;
         try {
             Scanner sc = new Scanner(System.in);
-            System.out.println("Insert first integer:");
-            int n1 = Integer.parseInt(sc.next());
+            System.out.println("Insert first float:");
+            double n1 = Double.parseDouble(sc.next());
             this.n1 = n1;
-            System.out.println("Insert second integer");
-            int n2 = Integer.parseInt(sc.next());
+            System.out.println("Insert second float");
+            double n2 = Double.parseDouble(sc.next());
             this.n2 = n2;
             System.out.println("Operation (+, -, /, *):");
             String op = sc.next().toLowerCase();
